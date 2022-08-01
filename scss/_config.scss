@@ -18,3 +18,22 @@ $secondary-color: #ff8700;
     background-color: $color;
     color: set-text-color($color);
 }
+
+//Margin and padding classes
+$spaceAmount:(1,2,3,4,5);
+
+@each $space in $spaceAmount{
+    .m-#{$space}{
+        margin: #{$space}rem;
+    }
+    .my-#{$space}{
+        margin: #{$space}rem 0;
+    }
+    .p-#{$space}{
+        margin: #{$space}rem;
+    }
+    .py-#{$space}{
+        margin: #{$space}rem 0;
+    }
+}
+    
